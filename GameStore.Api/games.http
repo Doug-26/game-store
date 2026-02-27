@@ -1,0 +1,33 @@
+GET http://localhost:5169/games
+
+###
+GET http://localhost:5169/games/1
+
+###
+POST http://localhost:5169/games
+Content-Type: application/json
+
+{
+    "name": "Super Mario Odyssey",
+    "genreId": 2,
+    "price": 59.99,
+    "releaseDate": "2017-10-27"
+}
+
+###
+PUT http://localhost:5169/games/2
+Content-Type: application/json
+
+{
+    "name": "Red Dead Redemption 4",
+    "genreId": 2,
+    "price": 60.99,
+    "releaseDate": "2018-10-26"
+}
+
+###
+DELETE http://localhost:5169/games/3
+
+
+###
+GET http://localhost:5169/genres
